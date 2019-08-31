@@ -6,5 +6,5 @@ funcDim = numel(x);
 if funcDim < 2
     error('function dimension should be larger than 1.');
 end
-y = x(1) .^ 2 + 1e6 * sum(x(2 : funcDim) .^ 2);
+y = x(1) ^ 2 + 1e6 * sum(x(2 : funcDim) .^ 2);
 end
