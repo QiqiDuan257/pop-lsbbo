@@ -32,5 +32,5 @@ X = popGetTestCases(7);
 y = [0 6000001 6000001 6000001 139000001 139000001 91000049 91000000];
 popCheckBFunc(funcName, X, y);
 
-%% function dimension should be larger than 1.
+%% function dimension should be greater than 1.
 popFuncCigar(popGetTestCases(1));
