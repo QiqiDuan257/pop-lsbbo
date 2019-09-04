@@ -5,7 +5,17 @@ if ~isvector(x)
 end
 funcDim = numel(x);
 if isempty(popSV) || any(size(popSV) ~= size(x))
-    popSV = load(sprintf('../.popInputData/popShiftVector%d.txt', funcDim));
+    folder = sprintf('/.popInputData/popShiftVector%d.txt', funcDim);
+    if exist(['.' folder], 'file')
+        folder = ['.' folder];
+    elseif exist(['..' folder], 'file')
+        folder = ['..' folder];
+    elseif exist(['../..' folder], 'file')
+        folder = ['../..' folder];
+    else
+        error('cannot find the txt file.');
+    end
+    popSV = load(folder);
     if any(size(popSV) ~= [funcDim 1])
         error('incorrectly load input data -> shift vector.');
     end
