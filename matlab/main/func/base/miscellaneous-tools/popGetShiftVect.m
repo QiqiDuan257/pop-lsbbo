@@ -1,13 +1,10 @@
 function shift = popGetShiftVect(x)
-% Get the Shift Vector.
+% Get the Shift Vector as the same dimensions as the input.
 if ~isvector(x)
     error('the input should be a vector.');
 end
 funcDim = numel(x);
-shift = load(sprintf('../.popInputData/popShiftVector%d.txt', funcDim));
-if any(size(shift) ~= [funcDim 1])
-    error('incorrectly load input data -> shift vector.');
-end
+shift = popLoadShiftVectTxt(funcDim);
 if isrow(x)
     shift = shift';
 end
