@@ -11,5 +11,5 @@ for d = 1 : length(optRes)
     title(funcDims(d));
     xlabel('Dimension index'); ylabel('optx');
 end
-fprintf(sprintf('Total runtime: %7.5e.\n', toc(startRun)));
+fprintf('Total runtime: %7.5e.\n', toc(startRun));
 end
