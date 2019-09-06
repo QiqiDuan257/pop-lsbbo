@@ -1,12 +1,11 @@
 function y = popSFuncCigar(X)
 persistent popSV; % shift vector
-[funcDim, popSize] = size(X);
+funcDim = size(X, 1);
 if funcDim < 2
     error('function dimension should be greater than 1.');
 end
 if isempty(popSV) || (size(popSV, 1) ~= funcDim)
-    popSV = popLoadShiftVectTxt(funcDim);
-    popSV = repmat(popSV, 1, popSize);
+    popSV = popGetShiftVectFP(X);
 end
 y = popFuncCigar(X - popSV);
 end
