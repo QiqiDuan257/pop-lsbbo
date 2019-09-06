@@ -37,8 +37,8 @@ for d = 1 : length(funcDims)
     end
     save(sprintf('popShiftVector%d.txt', funcDim), 'shift', '-ascii');
     save(sprintf('popShiftVector%d.mat', funcDim), 'shift', '-v7.3');
-    fprintf(sprintf('%6d: runtime %7.2e.\n', funcDim, toc(startRunD)));
+    fprintf('%6d: runtime %7.2e.\n', funcDim, toc(startRunD));
     shifts{d} = shift;
 end
-fprintf(sprintf('Total runtime: %7.5e.\n', toc(startRun)));
+fprintf('Total runtime: %7.5e.\n', toc(startRun));
 end
