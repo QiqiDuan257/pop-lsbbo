@@ -9,6 +9,13 @@ function popPlotContour(funcName, x, y, levels)
 %
 % Reference:
 %   https://www.mathworks.com/help/matlab/ref/contourf.html
+if ~isvector(x)
+    error('the input `x` should be a vector.');
+end
+if ~isvector(y)
+    error('the input `y` should be a vector.');
+end
+
 if nargin < 4
     isShowLevel = false;
 else
