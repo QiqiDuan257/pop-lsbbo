@@ -7,7 +7,7 @@ function shifts = popGeneCommShiftVects(funcUB, funcLB, seed, funcDims)
 %   seed     : seed for generating random numbers (non-negative integer)
 %   funcDims : function dimensions (vector)
 % Output <-
-%   shifts   : shift vector between funcUB and funcLB (column vector)
+%   shifts   : shift vector between funcUB and funcLB (cell)
 startRun = tic;
 if nargin < 4
     funcDims = [popGeneCommFuncDims() 100000];
