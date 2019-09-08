@@ -11,12 +11,11 @@ function isOrth = popCheckIsOrth(X, tol)
 if size(X, 1) ~= size(X, 2)
     error('`X` should be a square matrix.');
 end
-if ~isscalar(tol) || ~isnumeric(tol) || (tol < 0)
-    error('`tol` should be a non-negative number.');
-end
-
 if nargin < 2
     tol = 1e-6;
+end
+if ~isscalar(tol) || ~isnumeric(tol) || (tol < 0)
+    error('`tol` should be a non-negative number.');
 end
 
 condA = abs(X * X' - eye(size(X))) < tol;
