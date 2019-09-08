@@ -6,7 +6,7 @@ clear; clc;
 %   https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html
 %   https://www.cs.ubc.ca/~schmidtm/Software/copyright.html
 %   https://www.cs.ubc.ca/~schmidtm/Software/minFunc_2012.zip
-% first put runSdGrad.m in the working directory of the `minFunc` library
+% first put runLbfgsGrad.m in the working directory of the `minFunc` library
 addpath(genpath(pwd));
 
 %%
@@ -34,8 +34,8 @@ for d = 1 : length(funcDims)
     res.exitFlag = exitFlag;
     res.output = output;
     optRes{d} = res;
-    fprintf(sprintf('%6d: opty %7.2e + runtime %7.2e.\n', ...
-        funcDim, y, toc(startRunD)));
+    fprintf('%6d: opty %7.2e + runtime %7.2e.\n', ...
+        funcDim, y, toc(startRunD));
 end
 save('runLbfgsGrad.mat', 'optRes', 'funcDims', '-v7.3');
 fprintf('Total runtime: %7.5e.\n', toc(startRun));
