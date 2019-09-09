@@ -34,8 +34,8 @@ for d = 1 : length(funcDims)
     res.exitFlag = exitFlag;
     res.output = output;
     optRes{d} = res;
-    fprintf(sprintf('%6d: opty %7.2e + runtime %7.2e.\n', ...
-        funcDim, y, toc(startRunD)));
+    fprintf('%6d: opty %7.2e + runtime %7.2e.\n', ...
+        funcDim, y, toc(startRunD));
 end
 save('runSdGrad.mat', 'optRes', 'funcDims', '-v7.3');
-fprintf(sprintf('Total runtime: %7.5e.\n', toc(startRun)));
+fprintf('Total runtime: %7.5e.\n', toc(startRun));
