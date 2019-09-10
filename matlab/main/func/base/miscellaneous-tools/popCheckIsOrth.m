@@ -23,12 +23,10 @@ condB = abs(X' * X - eye(size(X))) < tol;
 condC = abs(sum(X .^ 2, 1) - 1) < tol;
 condD = abs(sum(X .^ 2, 2) - 1) < tol;
 condE = rank(X) == size(X, 1);
-detX = det(X);
-condF = (abs(detX - 1) < tol) || (abs(detX + 1) < tol);
 
 if all(condA(:)) && all(condB(:)) && ...
         all(condC(:)) && all(condD(:)) && ...
-        condE && condF
+        condE
     isOrth = true;
 else
     isOrth = false;
