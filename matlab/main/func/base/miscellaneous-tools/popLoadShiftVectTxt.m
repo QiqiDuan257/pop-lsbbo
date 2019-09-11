@@ -1,5 +1,6 @@
 function shift = popLoadShiftVectTxt(funcDim)
 % Load the Shift Vector Txt file.
+%
 % Input ->
 %   funcDim : function dimension (positive integer)
 % Output <-
