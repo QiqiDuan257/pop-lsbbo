@@ -1,0 +1,39 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#             $$$ Enjoy the <pop-lsbbo> pure-MATLAB Library $$$             #
+#                        --- version: 0.00.000.1 ---                        #
+#############################################################################
+popRGradCigar_: pass the test.
+     3: runtime 9.55e-02.
+popRGradCigar_: pass the test.
+     4: runtime 2.03e-03.
+popRGradCigar_: pass the test.
+     5: runtime 1.13e-03.
+popRGradCigar_: pass the test.
+     6: runtime 1.14e-03.
+popRGradCigar_: pass the test.
+     7: runtime 3.48e-03.
+popRGradCigar_: pass the test.
+     2: runtime 1.03e-03.
+popRGradCigar_: pass the test.
+    10: runtime 9.91e-04.
+popRGradCigar_: pass the test.
+   100: runtime 3.04e-02.
+popRGradCigar_: pass the test.
+  1000: runtime 1.11e+00.
+popRGradCigar_: pass the test.
+  2000: runtime 4.30e+00.
+popRGradCigar_: pass the test.
+  4000: runtime 1.69e+01.
+popRGradCigar_: pass the test.
+  6000: runtime 3.77e+01.
+popRGradCigar_: pass the test.
+  8000: runtime 6.70e+01.
+popRGradCigar_: pass the test.
+ 10000: runtime 1.05e+02.
+Total runtime: 2.32089e+02.
