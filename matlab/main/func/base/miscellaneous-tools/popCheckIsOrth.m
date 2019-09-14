@@ -24,11 +24,7 @@ condC = abs(sum(X .^ 2, 1) - 1) < tol;
 condD = abs(sum(X .^ 2, 2) - 1) < tol;
 condE = rank(X) == size(X, 1);
 
-if all(condA(:)) && all(condB(:)) && ...
-        all(condC(:)) && all(condD(:)) && ...
-        condE
-    isOrth = true;
-else
-    isOrth = false;
-end
+isOrth = all(condA(:)) && all(condB(:)) && ...
+    all(condC) && all(condD) && ...
+    condE;
 end
