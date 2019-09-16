@@ -5,7 +5,7 @@ clear; clc;
 %%
 startRun = tic;
 randSeed = 20190818; % for reproducibility
-funcName = 'popSFuncGradCigar_';
+funcName = 'popSFuncCigar_';
 funcDims = [2 10 100 1000 2000 4000 6000 8000 10000]';
 % funcDims = [2 10]';
 optRes = cell(length(funcDims), 1);
