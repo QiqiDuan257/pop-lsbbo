@@ -1,0 +1,20 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#             $$$ Enjoy the <pop-lsbbo> pure-MATLAB Library $$$             #
+#                        --- version: 0.00.000.1 ---                        #
+#############################################################################
+     2: opty 6.92e-07 + runtime 3.14e-01.
+    10: opty 1.05e-06 + runtime 1.52e-02.
+   100: opty 8.87e-06 + runtime 1.77e-02.
+  1000: opty 8.49e-04 + runtime 1.62e-01.
+  2000: opty 9.49e-07 + runtime 6.70e-01.
+  4000: opty 9.64e-07 + runtime 1.95e+00.
+  6000: opty 1.01e-06 + runtime 2.38e+00.
+  8000: opty 9.91e-07 + runtime 5.51e+00.
+ 10000: opty 1.00e-06 + runtime 2.02e+01.
+Total runtime: 3.12762e+01.
