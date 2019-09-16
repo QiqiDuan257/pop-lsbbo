@@ -12,8 +12,8 @@ if nargin < 4
 end
 
 [funcDim, popSize] = size(X);
-if numel(y) ~= popSize
-    error('the input `y` should be a %d-dimensional vector.', popSize);
+if ~isvector(y) || (numel(y) ~= popSize)
+    error('`y` should be a %d-dimensional vector.', popSize);
 end
 if iscolumn(y)
     y = y';

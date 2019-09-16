@@ -12,11 +12,15 @@ startRun = tic;
 if nargin < 4
     funcDims = [popGeneCommFuncDims() 100000];
 end
+
 if ~isscalar(funcUB) || ~isnumeric(funcUB)
     error('`funcUB` should be a numeric scalar.');
 end
 if ~isscalar(funcLB) || ~isnumeric(funcLB)
     error('`funcLB` should be a numeric scalar.');
+end
+if funcUB < funcLB
+    error('`funcUB` should be greater than or equal to `funcLB`.');
 end
 if ~isscalar(seed) || ~isnumeric(seed) || (seed < 0)
     error('`seed` should be a non-negative integer.');

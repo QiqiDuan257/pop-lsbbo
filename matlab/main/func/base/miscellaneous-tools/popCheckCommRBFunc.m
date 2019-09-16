@@ -13,7 +13,7 @@ funcDims = [3 : 7 popGeneCommFuncDims()];
 for d = 1 : length(funcDims)
     startRunD = tic;
     funcDim = funcDims(d);
-    popCheckRBFunc(funcName, zeros(funcDim, 7), zeros(1, 7), tol);
+    popCheckBFunc(funcName, zeros(funcDim, 7), zeros(1, 7), tol);
     fprintf('%6d: runtime %7.2e.\n', funcDim, toc(startRunD));
 end
 fprintf('Total runtime: %7.5e.\n', toc(startRun));

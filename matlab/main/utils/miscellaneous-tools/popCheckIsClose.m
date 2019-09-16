@@ -15,6 +15,9 @@ end
 if nargin < 3
     tol = 1e-24;
 end
+if ~isscalar(tol) || ~isnumeric(tol) || (tol < 0)
+    error('`tol` should be a non-negative number.');
+end
 
 isClose = abs(X - Y) < tol;
 isClose = all(isClose(:));
