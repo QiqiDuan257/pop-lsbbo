@@ -1,0 +1,20 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016b (9.1.0.441655) 64-bit (glnxa64)
+                             September 7, 2016
+
+#############################################################################
+#             $$$ Enjoy the <pop-lsbbo> pure-MATLAB Library $$$             #
+#                        --- version: 0.00.000.1 ---                        #
+#############################################################################
+     2: isOrthTxt 1 isOrthMat 1 - runtime 2.42e-01.
+    10: isOrthTxt 1 isOrthMat 1 - runtime 4.34e-03.
+   100: isOrthTxt 1 isOrthMat 1 - runtime 5.09e-02.
+  1000: isOrthTxt 1 isOrthMat 1 - runtime 1.43e+00.
+  2000: isOrthTxt 1 isOrthMat 1 - runtime 5.62e+00.
+  4000: isOrthTxt 1 isOrthMat 1 - runtime 2.50e+01.
+  6000: isOrthTxt 1 isOrthMat 1 - runtime 5.50e+01.
+  8000: isOrthTxt 1 isOrthMat 1 - runtime 9.68e+01.
+ 10000: isOrthTxt 1 isOrthMat 1 - runtime 1.50e+02.
+Total runtime: 3.33925e+02.
